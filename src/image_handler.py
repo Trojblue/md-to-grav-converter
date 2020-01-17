@@ -1,8 +1,19 @@
 from handler import Handler
+"""
+
+## Pending Features
+- 检测重复图片
+- 上传到图床, 留下本地备用链接
+- resize
+- 绝对路径图片转相对路径
+
+## Notes
+自动上传: https://github.com/chchuj/useful_script/blob/master/Scripts/md%E6%96%87%E4%BB%B6%E5%9B%BE%E7%89%87%E5%9B%BE%E5%BA%8A%E8%BD%AC%E6%8D%A2/md_transfer_v3
+删除没用过的图: https://github.com/chchuj/useful_script/blob/master/Scripts/%E6%9F%A5%E6%89%BE%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%BA%9F%E5%BC%83%E7%9A%84%E5%9B%BE%E7%89%87/unuse_img.py
+
+"""
 class ImageHandler(Handler):
-    """
-    处理图像相关
-    """
+
     def __init__(self, file_path, output_path):
         super().__init__(file_path, output_path)
 
