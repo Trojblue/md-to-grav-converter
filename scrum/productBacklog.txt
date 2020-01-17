@@ -1,0 +1,40 @@
+--------------------------
+TYPE: USER STORY 0.1         STATUS: InProgress
+NAME: read
+ESTIMATE: 1h
+ACTUAL:
+ISSUE: Complete parsing of .md files
+--------------------------
+TYPE: USER STORY 0.2         STATUS: NotStarted
+NAME:
+ESTIMATE:
+ACTUAL:
+ISSUE: Create Folder and copy photo into the folder
+--------------------------
+TYPE: USER STORY 0.3         STATUS: NotStarted
+NAME:
+ESTIMATE:
+ACTUAL:
+ISSUE:  Process percentage-based photo resize to resolution-based photo resize
+--------------------------
+TYPE: USER STORY 0.4         STATUS: NotStarted
+NAME:
+ESTIMATE:
+ACTUAL:
+ISSUE: Create CLI for program
+--------------------------
+TYPE: USER STORY          STATUS: NotStarted
+NAME:
+ESTIMATE:
+ACTUAL:
+ISSUE:
+--------------------------
+TYPE: USER STORY          STATUS: NotStarted
+NAME:
+ESTIMATE:
+ISSUE:
+--------------------------
+TYPE: USER STORY          STATUS: NotStarted
+NAME:
+ESTIMATE:
+ISSUE:
