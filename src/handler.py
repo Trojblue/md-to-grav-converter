@@ -1,11 +1,8 @@
+from converter import Converter
 class Handler:
     """
     template for all handler classes
     """
-    def __init__(self, file_path, output_path):
-        self.file_path = file_path
-        self.output_path = output_path
 
-
-
-
+    def __init__(self, converter: Converter):
+        self.converter = converter

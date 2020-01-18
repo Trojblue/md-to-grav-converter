@@ -1,4 +1,7 @@
+import fileinput
+from converter import Converter
 from handler import Handler
+
 """
 TODO:
 - title
@@ -6,31 +9,31 @@ TODO:
 - date
 - taxonomy
 - summary
-
 """
+
 class YAMLHandler (Handler):
     """
     添加默认的yaml头文件
     """
-    def __init__(self, file_path, output_path):
-        super().__init__(file_path, output_path)
-        self._yamlList = []
-        self.title = ""
+
+    def __init__(self, converter: Converter):
+        super().__init__(converter)  # todo: maybe wrong here
+        self._yaml_dict = {}
+        self.yaml_path = "./temp.yaml"
+
 
     def set_title(self):
-        self.title = input("input the title:")
-        self._yamlList.append("title: \'%s\'"%(self.title))
+        title = input("input the title:")
+        self._yaml_dict["title"] = title
 
     def set_summary(self):
         summary = input("input the summary: leave [blank] to use title; type [N] to not use summary")
         if summary == "":
-            summary = self.title
+            summary = self._yaml_dict["title"]
         elif summary == "N" or summary == "n":
-            self._yamlList.append(["Summary:",
-                                   ["    enabled: \'0\'"] ])
+            self._yaml_dict['summary'] = {'enabled': '0'}
             return
-        self._yamlList.append(["Summary:",
-                               ["    enabled: \'1\'"] ])
+        self._yaml_dict['summary'] = {'enabled': '1'}
         # todo: link handler to converter;
         # todo: handler has a queue of to-add arguments
 
@@ -46,9 +49,4 @@ class YAMLHandler (Handler):
 
     def set_taxonomy(self, category_list, tag_list):
         """"""
-        pass
-
-    def set_summary(self):
-        """set default summary for item
-        """
         pass

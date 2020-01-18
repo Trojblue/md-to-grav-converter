@@ -1,23 +1,38 @@
 from typing import List
 import re
-import os
+import os.path
 
-"""
-Main class for conversion process
-"""
+DEFAULT_PAGE_TYPE = "itm.zh"
+DEFAULT_PATH = os.path.join(os.path.dirname(os.getcwd()), "outputs")  #
+DEFAULT_YAML_PATH = "temp.yaml"
 
-DEFAULT_NAME = "itm.zh.md"  # name of the output markdown file
-OUTPUT_PATH = os.path.join(os.path.dirname(os.getcwd()), "outputs") # /outputs
-SAMPLE_FILE = os.path.join(os.path.dirname(os.getcwd()), "bin", "test.md") # /bin/test.md
 
 class Converter():
+    """
+    ===Public Attributes===
+    md_path      path of original md file
+    yaml_path    path of the temporary yaml file
 
-    def __init__(self, path:str):
+    output_path  all result folders will be placed in this folder
+    folder_name  name for the output folder
+    page_type    md file in ./folder_name/ will be named as <page_type>.md
+
+    md           raw content of original md file
+    """
+
+    def __init__(self, md_path: str, folder_name: str):
         """
-        path: path of the markdown file to be processed
+        md_path: path of original md file
+        folder_name: name for the output folder
         """
-        self._inputPath = path
-        self.read_md()
+        self.md_path = md_path
+        self.folder_name = folder_name
+        self.set_page_type(DEFAULT_PAGE_TYPE)
+        self.set_output_path(DEFAULT_PATH)
+        self.set_yaml_path(DEFAULT_YAML_PATH)
+
+        # self.read_md()
+
 
     def read_md(self) -> None:
         """reads markdown file into a list of lines
@@ -37,9 +52,15 @@ class Converter():
         pass
 
     # Additional functions
-    def set_path(self, path:str):
-        """set a new path for the markdown file to be processed
-        """
-        self._inputPath = path
+    def set_page_type(self, page_type: str):
+        self.page_type = page_type
 
+    def set_output_path(self, path: str):
+        self.output_path = path
 
+    def set_yaml_path(self, path: str):
+        self.yaml_path = path
+
+    def __repr__(self):
+        return " md_path: %s \n yaml_path: %s \n output_path: %s \n folder_name: %s \n page_type: %s \n" % \
+               (self.md_path, self.yaml_path, self.output_path, self.folder_name, self.page_type)

@@ -1,0 +1,16 @@
+title: '解决Grav CMS迁移后的404问题'
+date: '03:45 29-12-2019'
+taxonomy:
+  category:
+    - blog
+  tag:
+    - Grav
+    - Linux
+    - 前端
+    - VPS
+summary:
+  enabled: '1'
+feed:
+  limit: 10
+aura:
+  pagetype: website

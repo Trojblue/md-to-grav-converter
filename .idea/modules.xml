@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/typora-to-grav-converter.iml" filepath="$PROJECT_DIR$/.idea/typora-to-grav-converter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/md2Grav.iml" filepath="$PROJECT_DIR$/.idea/md2Grav.iml" />
     </modules>
   </component>
 </project>
