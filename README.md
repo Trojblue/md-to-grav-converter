@@ -19,3 +19,9 @@ write everything up
 
 
 
+## Issues
+- `remove_old_yaml` 如果文件开头有空行的话可能不起作用
+
+
+## log
+- 添加 remove_old_yaml 功能

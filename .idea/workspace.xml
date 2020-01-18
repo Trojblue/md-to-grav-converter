@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dac868ad-dee1-4a2e-a3ad-198e6478b493" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/sample.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrum/productBacklog.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/io_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/test.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrum/productBacklog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/item.zh.md" beforeDir="false" afterPath="$PROJECT_DIR$/bin/sample_item.zh.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/converter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/playground.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/playground.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_handler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/yaml_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/yaml_handler.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,7 +48,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -75,6 +71,28 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.playground">
+    <configuration name="dump" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="md2Grav" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/dump.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="md2Grav" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,6 +162,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.playground" />
+        <item itemvalue="Python.dump" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main" />
       </list>
@@ -165,6 +184,9 @@
       <workItem from="1579237691224" duration="5933000" />
       <workItem from="1579317799175" duration="174000" />
       <workItem from="1579318002619" duration="11762000" />
+      <workItem from="1579329801753" duration="1514000" />
+      <workItem from="1579331570064" duration="1011000" />
+      <workItem from="1579359770346" duration="7890000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1579195923715</created>
@@ -180,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579241780028</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added YAML read/write functions; separate file operations to io_handler.py">
+      <created>1579330173255</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579330173255</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,12 +231,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="added YAML read/write functions; separate file operations to io_handler.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="added YAML read/write functions; separate file operations to io_handler.py" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/md_to_grav_converter$playground.coverage" NAME="playground Coverage Results" MODIFIED="1579329391072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/typora_to_grav_converter$main.coverage" NAME="main Coverage Results" MODIFIED="1579193518912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/md2Grav$dump.coverage" NAME="dump Coverage Results" MODIFIED="1579370049838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/typora_to_grav_converter$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1579216203545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/typora_to_grav_converter$playground.coverage" NAME="playground Coverage Results" MODIFIED="1579215949157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/md2Grav$playground.coverage" NAME="playground Coverage Results" MODIFIED="1579370589137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>

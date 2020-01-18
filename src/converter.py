@@ -2,7 +2,7 @@ from typing import List
 import re
 import os.path
 
-DEFAULT_PAGE_TYPE = "itm.zh"
+DEFAULT_PAGE_TYPE = "item.zh"
 DEFAULT_PATH = os.path.join(os.path.dirname(os.getcwd()), "outputs")  #
 DEFAULT_YAML_PATH = "temp.yaml"
 
@@ -32,7 +32,6 @@ class Converter():
         self.set_yaml_path(DEFAULT_YAML_PATH)
 
         # self.read_md()
-
 
     def read_md(self) -> None:
         """reads markdown file into a list of lines
