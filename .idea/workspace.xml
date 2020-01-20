@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dac868ad-dee1-4a2e-a3ad-198e6478b493" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/item.zh.md" beforeDir="false" afterPath="$PROJECT_DIR$/bin/sample_item.zh.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/converter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/sample_item.zh.md" beforeDir="false" afterPath="$PROJECT_DIR$/bin/sample_item.zh.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/image_handler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/io_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/io_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/yaml_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/yaml_handler.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +183,7 @@
       <workItem from="1579318002619" duration="11762000" />
       <workItem from="1579329801753" duration="1514000" />
       <workItem from="1579331570064" duration="1011000" />
-      <workItem from="1579359770346" duration="7890000" />
+      <workItem from="1579359770346" duration="11009000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1579195923715</created>
@@ -209,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579330173255</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="adding more YAML read/write functions">
+      <created>1579370666029</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579370666029</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +236,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="commit" />
     <MESSAGE value="added YAML read/write functions; separate file operations to io_handler.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="added YAML read/write functions; separate file operations to io_handler.py" />
+    <MESSAGE value="adding more YAML read/write functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding more YAML read/write functions" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">

@@ -1,4 +1,5 @@
 from handler import Handler
+from converter import Converter
 """
 
 ## Pending Features
@@ -14,8 +15,8 @@ from handler import Handler
 """
 class ImageHandler(Handler):
 
-    def __init__(self, file_path, output_path):
-        super().__init__(file_path, output_path)
+    def __init__(self, converter: Converter):
+        super().__init__(converter)
 
     def handle_resize(self, og:str) ->str:
         """

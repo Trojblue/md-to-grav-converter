@@ -48,3 +48,15 @@ aura:
     }
 ```
 修改完毕后, 输入`sudo nginx -s reload` 重启nginx服务.
+
+## 插入图片测试
+
+图片1:
+<img src="img1.png" alt="img1.png" style="zoom:50%;" />
+
+<img src="img1.png" alt="img1.png" width="150" height="100" />
+
+![img2 Image](img2.png?resize=100,40)
+
+图片2:
+![img2](img2.png)

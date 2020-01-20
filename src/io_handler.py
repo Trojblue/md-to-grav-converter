@@ -3,11 +3,9 @@ from converter import Converter
 from handler import Handler
 
 """
-File operation handler;
-- write
-- read
+和<文件操作>相关的函数都在这里
+- 读, 写, 移动
 """
-
 
 class IOHandler(Handler):
     """
@@ -64,6 +62,21 @@ class IOHandler(Handler):
     def write_md(self):
         pass
 
+    def move_images(self) -> None:
+        """把所有原md文件里用到的图片移到新的文件夹里
+        图片格式:
+            <img src="img1.png" alt="img1.png" style="zoom:50%;" />
+            ![img2](img2.png)
+
+        """
+        c = self.converter
+        img_count = 0
+        f = open(c.md_path, 'r+', encoding="utf-8")
+        lines = f.readlines()
+        f.seek(0)
+
+        img_pattern = '---\s*$'
+
 
 def remove_old_yaml(file: str) -> bool:
     """检测文件是否有yaml header (用 --- 分隔), 如果存在的话就删除;
@@ -89,3 +102,4 @@ def remove_old_yaml(file: str) -> bool:
 
     f.close()
     return has_yaml
+
